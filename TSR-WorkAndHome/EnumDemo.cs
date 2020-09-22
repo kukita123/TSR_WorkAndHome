@@ -19,11 +19,29 @@ namespace TSR_WorkAndHome
     // Деклариране на изброяване с инициализация на константи:
     enum Coins { One = 1, Two, Five = 5, Ten = 10, Fifty = 50 };
 
+    enum ShippingMethod
+    {
+        Regular = 1,
+        Registered = 2,
+        Express=3
+    };
+
     enum Weekday { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
 
     class EnumDemo
     {
         public static void EnumsTest1()
+        {
+            var method = ShippingMethod.Express;
+            Console.WriteLine((int)method);
+            Console.WriteLine(method.ToString());
+
+            int methodId = 2;
+            Console.WriteLine((ShippingMethod)methodId);
+
+        }
+
+        public static void EnumsTest2()
         {
             Console.WriteLine("В света на животните");
             // Променлива от тип изброяване:
@@ -65,7 +83,7 @@ namespace TSR_WorkAndHome
             }
         }        
 
-        public static void EnumTest2()
+        public static void EnumsTest3()
         {
             Weekday Day ;
             double sum = 0;
@@ -79,6 +97,6 @@ namespace TSR_WorkAndHome
 
         }
     
-
+        
     }
 }

@@ -57,7 +57,9 @@ namespace TSR_WorkAndHome
 
             EnumDemo.EnumsTest1();
 
-            EnumDemo.EnumTest2();
+            EnumDemo.EnumsTest2();
+
+            EnumDemo.EnumsTest3();
 
             Console.ReadKey();
         }
