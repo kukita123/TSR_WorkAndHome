@@ -19,9 +19,11 @@ namespace TSR_WorkAndHome
     // Деклариране на изброяване с инициализация на константи:
     enum Coins { One = 1, Two, Five = 5, Ten = 10, Fifty = 50 };
 
+    enum Weekday { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+
     class EnumDemo
     {
-       public static void EnumsTest()
+        public static void EnumsTest1()
         {
             Console.WriteLine("В света на животните");
             // Променлива от тип изброяване:
@@ -61,6 +63,22 @@ namespace TSR_WorkAndHome
                 coin = (Coins)names.GetValue(i);
                 Console.WriteLine("coin: {0,-5} или {1}", coin, (int)coin);
             }
+        }        
+
+        public static void EnumTest2()
+        {
+            Weekday Day ;
+            double sum = 0;
+            for (Day = Weekday.Sunday; Day <= Weekday.Saturday; Day=(Weekday)(Day+1))
+            {
+                Console.WriteLine("Enter average daily temperature: ");
+                double t = double.Parse(Console.ReadLine());
+                sum += t;
+            }
+            Console.WriteLine("Average weekly temperature: "+sum/7);
+
         }
+    
+
     }
 }

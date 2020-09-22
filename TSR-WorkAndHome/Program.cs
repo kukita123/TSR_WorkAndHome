@@ -55,7 +55,9 @@ namespace TSR_WorkAndHome
             // Типът на операцията задаваме с помощта на константа Operation.Multiply, равна 3:
             MathOp(11, 5, Operation.Multiply);
 
-            EnumDemo.EnumsTest();
+            EnumDemo.EnumsTest1();
+
+            EnumDemo.EnumTest2();
 
             Console.ReadKey();
         }
