@@ -22,21 +22,7 @@ namespace TSR_WorkAndHome
 
             switch (op)
             {
-                case Operation.Add:
-                    result = x + y;
-                    break;
 
-                case Operation.Subtract:
-                    result = x - y;
-                    break;
-
-                case Operation.Multiply:
-                    result = x * y;
-                    break;
-
-                case Operation.Divide:
-                    result = x / y;
-                    break;
             }
 
             Console.WriteLine("Резултат от операция {0} на {1} и {2} равен на {3}",op, x, y, result);
