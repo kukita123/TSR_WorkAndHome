@@ -21,24 +21,28 @@ namespace DateTimeWork
             DateTime date3 = new DateTime(2020, 7, 20, 18, 30, 25); // година - месец - ден - час - минута - секунда
             Console.WriteLine(date3); // 20.07.2020 18:30:25
 
+            Console.WriteLine("\nТекущи ден и час, време по Гринуич:");
             Console.WriteLine(DateTime.Now);// текуща дата и час на компютъра
-            Console.WriteLine(DateTime.UtcNow);// дата и час по Гринуич (GMT)
+            Console.WriteLine(DateTime.UtcNow+" GMT");// дата и час по Гринуич (GMT)
             Console.WriteLine(DateTime.Today);// текуща дата
 
 
-
+            Console.WriteLine("\nДобавяне на 3 часа:");
             DateTime date = new DateTime(2020, 7, 20, 18, 30, 25); // 20.07.2020 18:30:25
             Console.WriteLine(date.AddHours(3)); // 20.07.2020 21:30:25
 
+            Console.WriteLine("\nВадене на дати:");
             DateTime date4 = new DateTime(2020, 7, 20, 18, 30, 25); // 20.07.2020 18:30:25
             DateTime date5 = new DateTime(2020, 7, 20, 15, 30, 25); // 20.07.2020 15:30:25
             Console.WriteLine(date4.Subtract(date5)); // 03:00:00
 
 
+            Console.WriteLine("\nИзваждане на три часа:");
             // изваждане на три часа
             DateTime date6 = new DateTime(2020, 7, 20, 18, 30, 25);  // 20.07.2020 18:30:25
             Console.WriteLine(date6.AddHours(-3)); // 20.07.2020 15:30:25
 
+            Console.WriteLine("\nВарианти на форматиране:");
             date1 = new DateTime(2020, 7, 20, 18, 30, 25);
             Console.WriteLine(date1.ToLocalTime()); // 20.07.2020 21:30:25
             Console.WriteLine(date1.ToUniversalTime()); // 20.07.2020 15:30:25
