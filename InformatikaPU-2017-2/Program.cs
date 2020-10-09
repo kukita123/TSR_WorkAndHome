@@ -22,25 +22,25 @@ namespace InformatikaPU_2017_2
             this.EGN = StringLimit(EGN, 15);
             this.name = StringLimit(name, 50);
             this.country = StringLimit(country, 30);
-            this.pCode = StringLimit(pCode, 30);       
+            this.pCode = StringLimit(pCode, 30);
             this.city = StringLimit(city, 30);
         }
 
         private static string StringLimit(string input, int maxLength)
-            {
-                if (input.Length <= 50)
-                    return input;
+        {
+            if (input.Length <= 50)
+                return input;
 
-                return input.Substring(0, maxLength);
-            }
+            return input.Substring(0, maxLength);
+        }
 
         public string DisplayEmploye()
         {
             return ime + ", " + EGN + ", " + name + ", " + country + ", " + city;
         }
-    }   
+    }
 
-    
+
     class Program
     {
         //control the number of new objects
@@ -50,7 +50,7 @@ namespace InformatikaPU_2017_2
             int n;
             n = int.Parse(Console.ReadLine());
 
-            while(n < 1 || n > 50)
+            while (n < 1 || n > 50)
             {
                 Console.WriteLine("Wrong number, try again!");
                 Console.Write("Enter number of employes - integer between 1 and 50:");
@@ -71,7 +71,7 @@ namespace InformatikaPU_2017_2
         public static List<Employe> SortByEGN(List<Employe> employe)
         {
             Employe temp;
-            for (int i = 0; i < employe.Count-1; i++)
+            for (int i = 0; i < employe.Count - 1; i++)
             {
                 for (int j = 0; j < employe.Count; j++)
                 {
@@ -90,16 +90,16 @@ namespace InformatikaPU_2017_2
         {
             foreach (var item in employe)
             {
-                string[]names = item.name.Split(' ');
+                string[] names = item.name.Split(' ');
                 string employeEmail;
-                if (names.Length==3)
+                if (names.Length == 3)
                     employeEmail = names[2] + "_" + names[0] + "_" + names[1].Substring(0, 1) + "@nncomputers.com";
-                else if (names.Length==2)
-                    employeEmail= names[1] + "_" + names[0] + "@nncomputers.com";
+                else if (names.Length == 2)
+                    employeEmail = names[1] + "_" + names[0] + "@nncomputers.com";
                 else
                     employeEmail = names[0] + "@nncomputers.com";
 
-                Console.WriteLine(item.ime+", email: " + employeEmail);
+                Console.WriteLine(item.ime + ", email: " + employeEmail);
             }
         }
 
@@ -127,26 +127,26 @@ namespace InformatikaPU_2017_2
                 Console.Write("Enter city:");
                 string city = Console.ReadLine();
 
-                Employe employe = new Employe(ime,EGN,name,country,pCode,city);
+                Employe employe = new Employe(ime, EGN, name, country, pCode, city);
 
                 NewEmployes.Add(employe);
             }
-                        
+
             NewEmployes = SortByTwoFields(NewEmployes);
 
             Console.WriteLine();
             Console.WriteLine("Part 2:");
             foreach (var item in NewEmployes)
             {
-                Console.WriteLine(item.DisplayEmploye()); 
+                Console.WriteLine(item.DisplayEmploye());
             }
-            
+
             Console.WriteLine();
             Console.WriteLine("Part 3:");
             NewEmployes = SortByEGN(NewEmployes);
             foreach (var item in NewEmployes)
             {
-                if(item.ime.Length == 0 || item.EGN.Length==0|| item.name.Length==0|| item.country.Length == 0)
+                if (item.ime.Length == 0 || item.EGN.Length == 0 || item.name.Length == 0 || item.country.Length == 0)
                     Console.WriteLine(item.DisplayEmploye());
             }
 

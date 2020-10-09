@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeWork", "DateTimeWor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformatikaPU-2017-2", "InformatikaPU-2017-2\InformatikaPU-2017-2.csproj", "{DF58EB18-536C-4454-AE8F-7F9E4B04F3E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformatikaPU-2019-1", "InformatikaPU-2019-1\InformatikaPU-2019-1.csproj", "{5959253E-9D93-47C6-8EEB-6966A35BA382}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DF58EB18-536C-4454-AE8F-7F9E4B04F3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF58EB18-536C-4454-AE8F-7F9E4B04F3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF58EB18-536C-4454-AE8F-7F9E4B04F3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5959253E-9D93-47C6-8EEB-6966A35BA382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5959253E-9D93-47C6-8EEB-6966A35BA382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5959253E-9D93-47C6-8EEB-6966A35BA382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5959253E-9D93-47C6-8EEB-6966A35BA382}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
