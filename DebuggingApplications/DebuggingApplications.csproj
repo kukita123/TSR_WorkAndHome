@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5959253E-9D93-47C6-8EEB-6966A35BA382}</ProjectGuid>
+    <ProjectGuid>{4B038236-4C74-487A-B824-3010AA686E21}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InformatikaPU_2019_1</RootNamespace>
-    <AssemblyName>InformatikaPU-2019-1</AssemblyName>
+    <RootNamespace>DebuggingApplications</RootNamespace>
+    <AssemblyName>DebuggingApplications</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

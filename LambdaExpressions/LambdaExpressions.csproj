@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5959253E-9D93-47C6-8EEB-6966A35BA382}</ProjectGuid>
+    <ProjectGuid>{975A9699-422E-4BD1-93A8-DE2AA0977152}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InformatikaPU_2019_1</RootNamespace>
-    <AssemblyName>InformatikaPU-2019-1</AssemblyName>
+    <RootNamespace>LambdaExpressions</RootNamespace>
+    <AssemblyName>LambdaExpressions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="BookRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

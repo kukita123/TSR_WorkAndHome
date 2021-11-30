@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5959253E-9D93-47C6-8EEB-6966A35BA382}</ProjectGuid>
+    <ProjectGuid>{DDD31BEB-1D4B-43B1-8CC8-FA423B5FC95C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>InformatikaPU_2019_1</RootNamespace>
-    <AssemblyName>InformatikaPU-2019-1</AssemblyName>
+    <RootNamespace>DictionarySoftUni</RootNamespace>
+    <AssemblyName>DictionarySoftUni</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
